@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600&family=Mulish:wght@200;300;400;500;600;700;800&family=Syne:wght@400;500;600&display=swap');
+
+:root{
+    --accent-color: #FF416C;
+    --accent-transparent: #FF416C33;
+    --dark-blue: #000010;
+    --dim-blue: #010025;
+	--maitree: 'Maitree', serif;
+	--mulish: 'Mulish', sans-serif;
+	--syne: 'Syne', sans-serif;
+	--slate: #8892b0;
+	--light-slate: #a8b2d1;
+	--lightest-slate: #ccd6f6;
+    --dark-slate: #495670;
+}
+
+body{
+	font-family: var(--maitree);
+    background-color: var(--dark-blue)!important;
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    user-zoom: none!important;
+    -webkit-user-zoom: none!important;
+    -moz-user-zoom: none!important;
+    -moz-touch-callout: none!important;
+    -webkit-touch-callout: none!important;
+	scroll-behavior: smooth!important;
+}
+html{
+    scroll-behavior: smooth!important;
+    font-family: var(--mulish);
+}
+a{
+    text-decoration: none!important;
+    -moz-touch-callout: none!important;
+    -webkit-touch-callout: none!important;
+}
+img{
+    -moz-touch-callout: none!important;
+    -webkit-touch-callout: none!important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+	background-color: var(--green-fade-1);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--custom-green);
+    border-radius: 10px;
+}
+::selection {
+    background-color: var(--lightest-navy);
+    color: var(--lightest-slate);
+}
+.App{
+	padding: 130px;
+	background-color: var(--dark-blue);
+	scroll-behavior: smooth!important;
+}
+#scrollContainer{
+	scroll-behavior: smooth!important;
+}
+
+.landingCard{
+    padding: 100px;
+}
+.landingCard h1.headerTitle{
+    color: var(--light-slate);
+    font-family: var(--mulish);
+    font-size: 33px;
+    font-weight: 600!important;
+    text-align: center;
+}
+.landingCard h1.headerTitle span{
+    color: var(--accent-color)
+}
+.landingCard .formInputCard{
+    padding: 25px 0px;
+}
+.landingCard .formInputCard input{
+    padding: 40px 30px;
+    outline: none!important;
+    border: none!important;
+    box-shadow: none!important;
+    -webkit-user-appearance: none!important;
+    background-color: var(--accent-transparent);
+    font-size: 25px;
+    font-family: var(--maitree);
+    font-weight: 500!important;
+    color: var(--lightest-slate);
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* App Loader */
+.appLoader{
+	width: 100%;
+	height: 100%;
+	z-index: 7000!important;
+	background-color: #000005;
+	animation: leaves 1s ease-in-out infinite alternate;
+	-webkit-animation: leaves 1s ease-in-out infinite alternate;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-user-select: none!important;
+	user-select: none!important;
+}
+.appLoader p{
+	margin: 0px;
+	color: var(--lightest-slate);
+	font-family: var(--inter);
+	font-weight: 600!important;
+	cursor: text;
+}
+.appLoader p span{
+	color: var(--accent-color);
+}
+
+
+@keyframes leaves {
+	0% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.8);
+		-webkit-transform: scale(1.8);
+	}
+}
