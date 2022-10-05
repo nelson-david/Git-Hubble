@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 
 const InputCard = () => {
 
@@ -8,6 +9,7 @@ const InputCard = () => {
     const searchUser = (e) => {
         e.preventDefault();
         console.log("Username: ", githubUsername);
+        router.push(`/user?id=${githubUsername}`)
     }
 
     return(

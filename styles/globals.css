@@ -5,6 +5,7 @@
     --accent-transparent: #FF416C33;
     --dark-blue: #000010;
     --dim-blue: #010025;
+    --white: #ffffff;
 	--maitree: 'Maitree', serif;
 	--mulish: 'Mulish', sans-serif;
 	--syne: 'Syne', sans-serif;
@@ -16,7 +17,7 @@
 
 body{
 	font-family: var(--maitree);
-    background-color: var(--dark-blue)!important;
+    background-color: var(--white)!important;
     -moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     user-zoom: none!important;
@@ -48,12 +49,12 @@ img{
     border-radius: 10px;
 }
 ::selection {
-    background-color: var(--lightest-navy);
+    background-color: var(--dark-blue);
     color: var(--lightest-slate);
 }
 .App{
 	padding: 130px;
-	background-color: var(--dark-blue);
+	background-color: var(--white);
 	scroll-behavior: smooth!important;
 }
 #scrollContainer{
@@ -64,10 +65,10 @@ img{
     padding: 100px;
 }
 .landingCard h1.headerTitle{
-    color: var(--light-slate);
-    font-family: var(--mulish);
+    color: var(--dark-blue);
+    font-family: var(--syne);
     font-size: 33px;
-    font-weight: 600!important;
+    font-weight: 500!important;
     text-align: center;
 }
 .landingCard h1.headerTitle span{
@@ -86,7 +87,7 @@ img{
     font-size: 25px;
     font-family: var(--maitree);
     font-weight: 500!important;
-    color: var(--lightest-slate);
+    color: var(--dark-blue);
     text-align: center;
     border-radius: 10px;
 }
